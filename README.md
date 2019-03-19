@@ -1,5 +1,5 @@
 # pyshop
-A tool for extracting and comparing prices of a book from amazon, flipkart and snapdeal
+A tool for extracting and comparing prices of a book from amazon, flipkart and snapdeal: CURRENTLY ONGOING
 
 Pre-requisites: 
 1- Python version 3.6.1
