@@ -46,6 +46,6 @@ amazon_price = ComparisonEngine().getAmazonPrice("https://www.amazon.in/Harry-Po
 snapdeal_price = ComparisonEngine().getSnapdealPrice("https://www.snapdeal.com/product/harry-potter-and-the-deathly/618550513335")
 
 if flipkart_price > 0 and amazon_price > 0 and snapdeal_price>0:
-    print("Amazon ", amazon_price)
-    print("Flipkart ", flipkart_price)
-    print("Snapdeal ", snapdeal_price)
+    print("Amazon: ", amazon_price)
+    print("Flipkart: ", flipkart_price)
+    print("Snapdeal: ", snapdeal_price)
