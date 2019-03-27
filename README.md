@@ -1,4 +1,4 @@
-# pyshop 
+# pyshop (Ongoing)
 # Web Scraping in Python 
 A tool for extracting and comparing prices of a book from amazon, flipkart and snapdeal: CURRENTLY ONGOING
 
