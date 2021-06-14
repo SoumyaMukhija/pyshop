@@ -1,11 +1,12 @@
 # Online store comparison engine.
+from abc import ABC, abstractmethod
 from dataclasses import dataclass
 
 import requests
 from bs4 import BeautifulSoup
 
 @dataclass
-class ComparisonEngine():
+class ComparisonEngine(ABC):
     """The base class of all ComparisonEngine.
     """
     url: str
@@ -19,6 +20,7 @@ class ComparisonEngine():
             else:
                 print("Response invlaid!")
 
+    @abstractmethod
     def getPrice(self):
         pass
 
@@ -69,11 +71,3 @@ if flipkart_price > 0 and amazon_price > 0 and snapdeal_price > 0:
     print("Flipkart: ", flipkart_price)
     print("Snapdeal: ", snapdeal_price)
     
-# exp not to hardcode in main block
-# urls = ['flip', 'amaz', 'snap']
-# engines = [FlipkartEngine: flipkart_url,
-#            AmazonEngine: amazon_url,
-#            SnapdealEngine: snapdeal_url]x[(a
-
-# for url in urls:
-#     engines.__getattribute__(name)
